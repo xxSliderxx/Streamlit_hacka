@@ -132,4 +132,5 @@ st.write("Avec les renseignemens précédents on peut vous proposer les destinat
 
 
 
-st.write(f'{recommended_cities[0][0]}({recommended_cities[0][1]}),{recommended_cities[1][0]}({recommended_cities[1][1]}),{recommended_cities[2][0]}({recommended_cities[2][1]}),{recommended_cities[3][0]}({recommended_cities[3][1]}),{recommended_cities[4][0]}({recommended_cities[4][1]})')
+st.write(f'{recommended_cities[0][0]}({recommended_cities[0][1]}),{recommended_cities[1][0]}({recommended_cities[1][1]}),{recommended_cities[2][0]}({recommended_cities[2][1]})')
+st.write(f'{recommended_cities[3][0]}({recommended_cities[3][1]}),{recommended_cities[4][0]}({recommended_cities[4][1]}))
