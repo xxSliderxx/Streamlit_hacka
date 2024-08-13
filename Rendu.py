@@ -89,7 +89,7 @@ else :
 
 Res2 = st.radio("Est ce que la coût de la vie est un critère important pour vous ?", ['Oui', 'Non'])
 if Res2 == 'Oui':
-    Cout_vie = st.number_input("Donnez alors une valeur entre 0 et 10.", key="Cout_vie_input")
+    Cout_vie = st.number_input("Donnez alors une valeur correspondant au niveau de vie entre 0 et 10.", key="Cout_vie_input")
     if 0 <= Cout_vie <= 10:
         Cout_vie = Cout_vie * 10 + 30
     else:
@@ -99,7 +99,7 @@ else:
 
 Res = st.radio("Est ce que la qualité de l'air est une notion importante pour vous ?", ['Oui', 'Non'])
 if Res == 'Oui':
-    Air = st.number_input("Donnez alors une valeur entre 0 et 10.", key="Air_input")
+    Air = st.number_input("Donnez alors une valeur correspondant au niveau de la qualité de l'air souhaitée entre 0 et 10 (0 : air pur 10 : air pollué.", key="Air_input")
     if 0 <= Air <= 10:
         Air = Air * 20 + 20
     else:
