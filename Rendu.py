@@ -99,7 +99,7 @@ else:
 
 Res = st.radio("Est ce que la qualité de l'air est une notion importante pour vous ?", ['Oui', 'Non'])
 if Res == 'Oui':
-    Air = st.number_input("Donnez alors une valeur correspondant au niveau de la qualité de l'air souhaitée entre 0 et 10 (0 : air pur 10 : air pollué.", key="Air_input")
+    Air = st.number_input("Donnez alors une valeur correspondant au niveau de la qualité de l'air souhaité entre 0 et 10 (0 : air pur, 10 : air pollué).", key="Air_input")
     if 0 <= Air <= 10:
         Air = Air * 20 + 20
     else:
