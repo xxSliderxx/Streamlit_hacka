@@ -82,7 +82,7 @@ else:
 
 y = st.number_input('Quel est le budget quotidien par personne (hébergement compris) ?')
 if y>= 0:
-    Plage = y
+    Place = y
 else :
     st.write("La valeur donnée n'est pas cohérente. Veuillez corriger !")
 
