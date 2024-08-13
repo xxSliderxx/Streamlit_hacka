@@ -72,10 +72,19 @@ cont = Dico_cont[cont]
 
 
 
-Sej = st.number_input("Quel montant souhaiteriez vous dépenser par personne pour un voyage d'une semaine tout compris ?")
+x = st.number_input("Quel montant souhaiteriez vous dépenser par personne pour un voyage d'une semaine tout compris ?")
+if x>=0:
+    Res = x
+else:
+    st.write("La valeur donnée n'est pas cohérente. Veuillez corriger !")
+    
 
 
-Place = st.number_input('Quel est le budget quotidien par personne (hébergement compris) ?')
+y = st.number_input('Quel est le budget quotidien par personne (hébergement compris) ?')
+if y>= 0:
+    Plage = y
+else :
+    st.write("La valeur donnée n'est pas cohérente. Veuillez corriger !")
 
 
 Res2 = st.radio("Est ce que la coût de la vie est un critère important pour vous ?", ['Oui', 'Non'])
@@ -84,7 +93,7 @@ if Res2 == 'Oui':
     if 0 <= Cout_vie <= 10:
         Cout_vie = Cout_vie * 10 + 30
     else:
-        st.write("La valeur donnée n'est pas donne. Veuillez corriger !")
+        st.write("La valeur donnée n'est pas cohérente. Veuillez corriger !")
 else:
     Cout_vie = 80
 
@@ -94,7 +103,7 @@ if Res == 'Oui':
     if 0 <= Air <= 10:
         Air = Air * 20 + 20
     else:
-        st.write("La valeur donnée n'est pas donne. Veuillez corriger !")
+        st.write("La valeur donnée n'est pas cohérente. Veuillez corriger !")
 else:
     Air = 70
 
@@ -104,7 +113,7 @@ if Res3 == 'Oui':
     if 0 <= Bien_etre <= 10:
         Bien_etre = Bien_etre * 0.6 + 2.5
     else:
-        st.write("La valeur donnée n'est pas donne. Veuillez corriger !")
+        st.write("La valeur donnée n'est pas cohérente. Veuillez corriger !")
 else:
     Bien_etre = 6.7
     
