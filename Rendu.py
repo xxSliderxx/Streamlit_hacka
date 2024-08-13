@@ -2,7 +2,12 @@ import pandas as pd
 import streamlit as st
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import NearestNeighbors
+import toml
 
+def load_config():
+    with open('config.toml') as file:
+        config = toml.load(file)
+    return config
 
 # Background
 page_bg_img = """
