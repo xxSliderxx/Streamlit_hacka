@@ -74,7 +74,7 @@ cont = Dico_cont[cont]
 
 x = st.number_input("Quel montant souhaiteriez vous dépenser par personne pour un voyage d'une semaine tout compris ?")
 if x>=0:
-    Res = x
+    Sej = x
 else:
     st.write("La valeur donnée n'est pas cohérente. Veuillez corriger !")
     
