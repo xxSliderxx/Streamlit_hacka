@@ -1,10 +1,4 @@
-[theme]
-backgroundColor="#2ac7ec"
-secondaryBackgroundColor="#107bd0"
-textColor="#000000"
- 
-[theme]
-base="dark"
+
 [theme]
 backgroundColor="#964c8e"
 secondaryBackgroundColor="#2b3169"
