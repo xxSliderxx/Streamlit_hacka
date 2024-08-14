@@ -44,7 +44,7 @@ df_try = pd.read_csv('Matrice.csv')
 
 
 
-st.header("Plannification de voyage")
+st.header("Planification de voyage")
 
 Choix = st.radio("Avez vous une idée du continent sur lequel vous voulez aller ?",['Oui','Non'])
 
