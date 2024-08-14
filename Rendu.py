@@ -119,13 +119,13 @@ else:
     
 user_input = [cont,Sej,Place,Cout_vie,Air,Bien_etre]
 
-print(user_input)
+
 user_input_scaled = scaler.transform([user_input])
 distances, indices = knn.kneighbors(user_input_scaled)
 recommended_cities = df_try.loc[indices[0], ['City','Country']].values
 
 
-print("Cities recommended based on your input:", recommended_cities)
+
 
 
 st.write("Avec les renseignemens précédents on peut vous proposer les destinations suivantes :")
